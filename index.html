@@ -3,11 +3,183 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<<<<<<< HEAD
     <script src="index.js"></script>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+=======
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>報價單彙整系統</title>
+</head>
+
+<body onload="todayTime()">
+    <div class="accountMenu">
+    <p style="color:#3680f5">
+    <font style="padding-right: 20px;"  class="today"> </font>
+    
+        
+    <button class="logout">登出</button>
+    經辦人 李OO
+    </p>
+    </div>
+    
+    
+    <h1 style="text-align:center">PIC報價單彙整系統</h1>
+    
+    <div class="navDiv">
+    <nav>
+        <button id="總彙整表" class="navButton" onclick="butClick1(id)">總彙整表</button>
+        <button id="合約流程表" class="navButton" onclick="butClick1(id)">合約流程表</button>
+        <button id="合約彙整表" class="navButton" onclick="butClick1(id)">合約彙整表</button>
+        <button id="UOF結案報價單" class="navButton" onclick="butClick1(id)">UOF結案報價單</button>
+        <button id="請款流程表" class="navButton" onclick="butClick1(id)">請款流程表</button>
+        <button id="發票開立明細" class="navButton" onclick="butClick1(id)">發票開立明細</button>
+    </nav>
+        </div>
+    <div style="border-style:solid;border-width: thin;width:100%;height:400px;">
+    <div class="inputDiv">
+        <span style="margin-left: 15%" >
+        <font >報價單編號</font>
+        <input type=text size=10>
+        <button style="position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(./funda.jpg) no-repeat;
+    background-size: 100% 100%;
+    left:24.2%;
+    margin-top: 0.4%;
+    border:0px;
+    background-position: center;" >
+        </button>
+        </span>
+        
+        
+        <span style="margin-left: 8.7%">
+        <font>業務</font>
+        <input type=text size=10>
+        <button style="position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(./funda.jpg) no-repeat;
+    background-size: 100% 100%;
+    left:41.5%;
+    margin-top: 0.4%;
+    border:0px;
+    background-position: center;" >
+        </button>
+        </span>
+        
+        
+        
+        <span style="margin-left: 5%">
+        <font>客戶</font>
+        <input type=text size=10>
+        <button style="position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(./funda.jpg) no-repeat;
+    background-size: 100% 100%;
+    left:56.1%;
+    margin-top: 0.4%;
+    border:0px;
+    background-position: center;" >
+        </button>
+        </span>
+        </div>
+        
+        <div class="inputDiv">
+            
+        <span style="margin-left: 16.85%">
+        <font>UOF編號</font>
+        <input type=text size=10>
+        <button style="position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(./funda.jpg) no-repeat;
+    background-size: 100% 100%;
+    left:24.2%;
+    margin-top: 0.45%;
+    border:0px;
+    background-position: center;" >
+        </button>
+        </span>
+        
+        
+        
+        <span style="margin-left: 5%">
+        <font>專業用途</font>
+        <input type=text size=10>
+        <button style="position: absolute;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background: url(./funda.jpg) no-repeat;
+    background-size: 100% 100%;
+    left:41.5%;
+    margin-top: 0.45%;
+    border:0px;
+    background-position: center;" >
+        </button>
+        </span>
+        
+        <button style="margin-left: 9%;
+                       background-color:#b2b2ff;
+                       width:50px
+                       ">搜尋</button>
+        
+    
+    </div>
+        
+        <div style="width:25%;height:100px;
+        position: absolute; right:3%;bottom:57%">
+            <button style="margin-left: 64%; background-color: #ede291" class="rightTopButton">
+               轉入總彙整表</button>
+            
+        <button style="margin-left: 3%;margin-top: 4%; background-color:#20fd29;width:80px "class="rightTopButton">報價單確認</button>
+            
+            <button style="margin-left: 3%; background-color:#7df0f4"class="rightTopButton">
+                上傳總彙整表</button>
+           
+            
+            
+            
+            <label for="fileinp">
+        <input type="button" id="btn" value="上傳檔案" style="width:88px; background-color:white;margin-left: 3%;">
+        <input type="file" id="fileinp">
+            </label>
+            
+    
+            
+            <button style="margin-left: 3%;margin-top: 4%; background-color:#f75a79;width:80px" class="rightTopButton">
+                退回修正</button>
+            
+            <button style="margin-left: 3%; background-color:#fdd242" class="rightTopButton">
+                下載總彙整表</button>
+            
+            <button style="margin-left: 3%; background-color:#f8c3ce;width:88px" class="rightTopButton">
+                報價單送審</button>
+            
+        </div>
+        
+        <div style="margin-top:2%">
+        <button style="margin-left: 1%; background-color:#b2b2ff" class="leftButton">
+                +新增資料</button>
+            
+            <button style="margin-left: 1%; background-color:#f75a79" class="leftTopButton">
+                -刪除資料</button>
+        </div>
+        
+        <h1 class="divP" style="padding-top: 5%;padding-left: 40%"></h1>
+        
+        </div>
+>>>>>>> 1d2c54bf04a0d930e3dd1e2bb826fe477712b52b
 </body>
 
 </html>
